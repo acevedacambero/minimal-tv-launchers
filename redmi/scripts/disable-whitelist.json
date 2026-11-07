@@ -1,0 +1,8 @@
+[
+ {"package":"com.mitv.shoplugin","reason":"Shopping advertising entry: manifest action com.mitv.ad.taobao; Alibaba trade activities; TVTaoService"},
+ {"package":"com.miui.tv.analytics","reason":"TV analytics; historical disabled item, preserve if already disabled"},
+ {"package":"com.duokan.videodaily","reason":"Video daily recommendation; historical disabled item, preserve if already disabled"},
+ {"package":"com.xiaomi.mitv.tvpush.tvpushservice","reason":"TV content push; historical disabled item, preserve if already disabled"},
+ {"package":"com.xm.webcontent","reason":"Web content recommendation; historical disabled item, preserve if already disabled"},
+ {"package":"com.xiaomi.gamecenter.sdk.service.mibox","reason":"Game recommendation SDK service; historical disabled item, preserve if already disabled"}
+]

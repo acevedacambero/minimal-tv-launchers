@@ -1,0 +1,36 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="local.minimal.tv" android:versionCode="14" android:versionName="2.2">
+  <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="34" />
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-feature android:name="android.software.leanback" android:required="true" />
+  <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+  <queries>
+    <intent><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LEANBACK_LAUNCHER"/></intent>
+    <intent><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent>
+    <intent><action android:name="android.settings.SETTINGS"/></intent>
+    <package android:name="com.xiaomi.mitv.tvplayer"/>
+    <package android:name="com.mitv.tvhome"/>
+    <package android:name="com.xiaomi.mitv.settings"/>
+    <package android:name="com.chinasoul.bt"/>
+    <package android:name="com.github.metacubex.clash.meta"/>
+    <package android:name="com.teamsmart.videomanager.tv"/>
+    <package android:name="com.ottplay.ottplay"/>
+    <package android:name="tv.own.owntv.captions.dev"/>
+  </queries>
+  <application android:label="极简桌面" android:allowBackup="false" android:supportsRtl="true" android:theme="@android:style/Theme.Material.NoActionBar" android:usesCleartextTraffic="false">
+    <receiver android:name=".HomeBootReceiver" android:exported="false" android:directBootAware="true">
+      <intent-filter><action android:name="android.intent.action.LOCKED_BOOT_COMPLETED"/><action android:name="android.intent.action.BOOT_COMPLETED"/><action android:name="android.intent.action.MY_PACKAGE_REPLACED"/></intent-filter>
+    </receiver>
+    <receiver android:name=".HomeKeyConfigReceiver" android:exported="true" android:permission="android.permission.DUMP"/>
+    <service android:name=".HomeRepairJob" android:exported="true" android:permission="android.permission.BIND_JOB_SERVICE"/>
+    <service android:name=".HomeKeyService" android:exported="true" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" android:label="极简桌面主页键">
+      <intent-filter><action android:name="android.accessibilityservice.AccessibilityService"/></intent-filter>
+      <meta-data android:name="android.accessibilityservice" android:resource="@xml/home_keys"/>
+    </service>
+    <activity android:name=".MainActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="landscape" android:excludeFromRecents="true">
+      <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.HOME"/><category android:name="android.intent.category.DEFAULT"/></intent-filter>
+      <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LEANBACK_LAUNCHER"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+    </activity>
+  </application>
+</manifest>

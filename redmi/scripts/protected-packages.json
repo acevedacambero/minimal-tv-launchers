@@ -1,0 +1,19 @@
+[
+ "android","local.minimal.tv","com.mitv.tvhome","com.android.systemui",
+ "com.android.tv.settings","com.xiaomi.mitv.settings","com.android.permissioncontroller",
+ "com.android.packageinstaller","com.android.intentresolver","com.android.shell",
+ "com.android.providers.settings","com.android.keychain","com.android.certinstaller",
+ "com.android.networkstack","com.android.networkstack.tethering","com.android.connectivity.resources",
+ "com.android.captiveportallogin","com.android.proxyhandler","com.android.pacprocessor",
+ "com.android.wifi.resources","com.android.wifi.dialog","com.android.hotspot2.osulogin",
+ "com.mediatek.network","com.android.bluetooth","com.mi.bluetooth","com.android.inputdevices",
+ "com.xiaomi.mi_connect_service","com.sohu.inputmethod.sogou.tv",
+ "com.android.externalstorage","com.android.providers.media","com.android.providers.media.module",
+ "com.android.providers.downloads","com.android.providers.tv","com.android.sharedstoragebackup",
+ "com.android.soundpicker","com.android.webview","com.mediatek.tvinput","com.mediatek.tv.service",
+ "com.xiaomi.mitv.tvplayer","mitv.service","com.mitv.codec.update","com.mitv.overseaservice",
+ "mediatek.factorymenu.ui","com.xiaomi.mitv.upgrade","com.xiaomi.mitv.tvmanager",
+ "com.mitv.cloudcontrol","com.xiaomi.mitv.smartpanel","com.xiaomi.mitv.smartshare",
+ "com.xiaomi.miplay","com.xiaomi.mitv.aod.screensaver","com.xiaomi.mitv.hyper.screensaver",
+ "com.xiaomi.setupwizard","com.xiaomi.mitv.appstore","com.xiaomi.account","com.xiaomi.account.auth"
+]

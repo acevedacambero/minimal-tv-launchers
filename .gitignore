@@ -1,0 +1,16 @@
+/redmi/build/
+/sony/build/
+/redmi/dist/
+/sony/dist/
+/redmi/signing/
+/sony/signing/
+/redmi/state/
+/sony/state/
+*.apk
+*.idsig
+*.jks
+*.keystore
+*.p12
+*.log
+.env
+.env.*
